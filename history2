@@ -1,0 +1,66 @@
+
+ 1192  docker exec -it conflux-node /bin/sh -lc 'pwd; ls -la; [ -f conflux.toml ] && { echo "-- conflux.toml (top) --"; sed -n "1,160p" conflux.toml; } || { echo "-- searching for conflux.toml --"; find / -maxdepth 3 -name conflux.toml 2>/dev/null | head -n 5; }'
+ 1194  export CORE_PK=
+ 1195  docker compose run --rm -e DEPLOYER_PRIVATE_KEY="$DEPLOYER_PRIVATE_KEY" hardhat /bin/bash -lc '\n  npm ci --no-audit --no-fund\n  node <<'JS'\n    const { Wallet } = require("ethers");\n    const w = new Wallet(process.env.DEPLOYER_PRIVATE_KEY);\n    console.log(w.address);\nJS\n'
+
+ docker compose run --rm -e DEPLOYER_PRIVATE_KEY="$DEPLOYER_PRIVATE_KEY" hardhat /bin/bash -lc '
+  npm ci --no-audit --no-fund
+  node <<'JS'
+    const { Wallet } = require("ethers");
+    const w = new Wallet(process.env.DEPLOYER_PRIVATE_KEY);
+    console.log(w.address);
+JS
+'
+ 
+ 1196  export ESPACE_TO=
+ 1197  
+ 
+ 
+ docker compose run --rm -e CORE_PK="$CORE_PK" -e ESPACE_TO="$ESPACE_TO" hardhat /bin/bash -lc '
+   npm ci --no-audit --no-fund >/dev/null 2>&1
+     node <<'"'"'JS'"'"'
+     const { Conflux, Drip } = require("js-conflux-sdk");
+     (async () => {
+       const probe = new Conflux({ url: "http://conflux:12537" });
+        const status = await probe.cfx.getStatus();
+        const networkId = status.networkId;
+        const conflux = new Conflux({ url: "http://conflux:12537", networkId });
+        const account = conflux.wallet.addPrivateKey(process.env.CORE_PK);
+        const cross = conflux.InternalContract("CrossSpaceCall");
+        const to = process.env.ESPACE_TO;
+        const receipt = await cross.transferEVM(to)
+        .sendTransaction({ from: account, value: Drip.fromCFX(1) })
+        .executed();
+        console.log(JSON.stringify({ networkId, to, tx: receipt.transactionHash, outcomeStatus: receipt.outcomeStatus }, null, 2));
+        })().catch((e) => { console.error(e); process.exit(1); });
+        
+        
+        '"'"'JS'"'"'
+        '
+ 1198  docker compose run --rm -e ESPACE_TO="$ESPACE_TO" hardhat /bin/bash -lc '\n  node <<'"'"'JS'"'"'\nconst { ethers } = require("ethers");\n(async () => {\n  const provider = new ethers.providers.JsonRpcProvider("http://conflux:8545");\n  const bal = await provider.getBalance(process.env.ESPACE_TO);\n  console.log("BalanceWei=", bal.toString());\n  console.log("BalanceCFX=", ethers.utils.formatEther(bal));\n})();\n\n\nJS'
+
+ docker compose run --rm -e ESPACE_TO="$ESPACE_TO" hardhat /bin/bash -lc '
+   node <<'"'"'JS'"'"'
+   const { ethers } = require("ethers");
+   (async () => {
+     const provider = new ethers.providers.JsonRpcProvider("http://conflux:8545");
+     const bal = await provider.getBalance(process.env.ESPACE_TO);
+     console.log("BalanceWei=", bal.toString());
+     console.log("BalanceCFX=", ethers.utils.formatEther(bal));
+     })();
+     
+     
+     '"'"'JS'"'"'
+     '
+ 1199  echo "$ESPACE_TO"
+ 1200  echo "${DEPLOYER_PRIVATE_KEY:0:10}..."
+ 1202  docker compose run --rm -e DEPLOYER_PRIVATE_KEY="$DEPLOYER_PRIVATE_KEY" hardhat /bin/bash -lc 'npm ci --no-audit --no-fund && npx hardhat compile && npx hardhat run scripts/deploy.js --network local'
+ 1203  cd ..
+ 1204  export CONTRACT_ADDR=$(sed -n '1p' hardhat/contract_address.txt)
+ 1205  echo "$CONTRACT_ADDR"
+ 1206  export PRIVATE_KEY="$DEPLOYER_PRIVATE_KEY"
+ 1207  docker compose build mcp && docker compose up -d --force-recreate mcp
+ 1208  curl -sS -X POST http://localhost:17777/go_online | jq .
+ 1210  curl -sS -X POST http://localhost:17777/register_recall_id -H 'Content-Type: application/json' -d '{"metadata":{"team":"demo"}}' | jq .
+ 1211  curl -sS http://localhost:17777/collect_identities | jq .
+ 1212  sleep 2 && docker logs --tail=200 mcp

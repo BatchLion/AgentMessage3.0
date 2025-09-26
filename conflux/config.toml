@@ -1,0 +1,18 @@
+[storage]
+path = "/data"
+
+[rpc]
+http-apis = ["all"]
+http-address = "0.0.0.0"
+http-port = 12537
+
+[jsonrpc_ws]
+ws-apis = ["all"]
+ws-address = "0.0.0.0"
+ws-port = 12538
+
+# Enable eSpace (Ethereum-style) JSON-RPC so ethers/Hardhat can connect
+# See Conflux docs: jsonrpc_http_eth_port / jsonrpc_ws_eth_port and public_evm_rpc_apis
+jsonrpc_http_eth_port = 8545
+jsonrpc_ws_eth_port = 8546
+public_evm_rpc_apis = "evm"

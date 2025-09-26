@@ -1,0 +1,128 @@
+services:
+  conflux:
+    image: confluxchain/conflux-rust:latest
+    container_name: conflux-node
+    ports:
+      - "12537:12537"   # Core RPC (HTTP)
+      - "8545:8545"     # eSpace RPC (HTTP)
+      - "12539:12539"   # GraphQL
+
+  hardhat:
+    image: node:20
+    container_name: hardhat
+    working_dir: /app
+    volumes:
+      - ./hardhat:/app
+      - ./contracts:/app/contracts
+    command: >
+      sh -c "npm install &&
+             npm i -s js-conflux-sdk@^2 &&
+             npx hardhat compile &&
+             npx hardhat run scripts/deploy.js --network local &&
+             npx hardhat run scripts/deploy_marketplace.js --network local"
+    environment:
+      - HARDHAT_NETWORK=local
+      - DEPLOYER_PRIVATE_KEY
+      - HTTP_PROXY=
+      - HTTPS_PROXY=
+      - NO_PROXY=
+    depends_on:
+      - conflux
+
+  # New: local Waku v2 node (nwaku) for relay + filter + store
+  nwaku:
+    image: wakuorg/nwaku:v0.32.0
+    container_name: nwaku
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    command:
+      - --relay=true
+      - --filter=true
+      - --store=true
+      - --store-message-retention-policy=time:21600
+      - --store-message-db-url=sqlite:///data/store.sqlite3
+      - --dns-discovery=false
+      - --discv5-discovery=true
+      - --discv5-bootstrap-node=enr:-IO4QDxToTg86pPCK2KvMeVCXC2ADVZWrxXSvNZeaoa0JhShbM5qed69RQz1s1mWEEqJ3aoklo_7EU9iIBcPMVeKlCQBgmlkgnY0iXNlY3AyNTZrMaEDdBHK1Gx6y_zv5DVw5Qb3DtSOMmVHTZO1WSORrF2loL2DdWRwgiMohXdha3UyAw
+      - --staticnode=/ip4/134.209.139.210/tcp/30303/p2p/16Uiu2HAmPLe7Mzm8TsYUubgCAW1aJoeFScxrLj8ppHFivPo97bUZ
+      - --staticnode=/ip4/134.209.139.210/tcp/8000/ws/p2p/16Uiu2HAmPLe7Mzm8TsYUubgCAW1aJoeFScxrLj8ppHFivPo97bUZ
+      - --peer-exchange=true
+      - --nat=extip:101.68.14.255
+      - --rest=true
+      - --rest-admin=true
+      - --rest-address=0.0.0.0
+      - --rest-port=8645
+      - --listen-address=0.0.0.0
+      - --log-level=debug
+
+    ports:
+      - "8645:8645"   # JSON-RPC HTTP
+      - "9000:9000/udp"
+      - "60000:60000"  # libp2p TCP listening port
+    volumes:
+      - ./nwaku-data:/data
+    restart: unless-stopped
+
+  mcp:
+    build: 
+      context: ./mcp
+      args:
+        - HTTP_PROXY=
+        - HTTPS_PROXY=
+        - NO_PROXY=
+    container_name: mcp
+    volumes:
+      - ./mcp:/app
+      - ./hardhat:/hardhat   # 读取 ABI
+    working_dir: /app
+    command: python -m conflux_mcp_demo.cli
+
+    ports:
+      - "17777:17777"
+    environment:
+      - RPC_URL=http://conflux:8545
+      - PRIVATE_KEY
+      - CONTRACT_ADDRESS=/hardhat/contract_address.txt
+      - WAKU_NODE_URL=http://nwaku:8645
+      - AGENTMESSAGE_MEMORY_PATH=/app/.data/agents.json
+      - AGENTMESSAGE_ENCRYPTION_PASSWORD=dev-password-change-me
+      - MESSAGE_HMAC_SECRET=dev-secret-change-me
+      - CORE_RPC_URL=http://conflux:12537
+      - CORE_PK
+      - ESPACE_FUND_AMOUNT_CFX=2
+    depends_on:
+      - conflux
+      - nwaku
+
+  indexer-marketplace:
+    image: python:3.11
+    container_name: indexer-marketplace
+    working_dir: /app
+    volumes:
+      - ./scripts:/app/scripts
+      - ./hardhat:/hardhat
+    environment:
+      - ESPACE_RPC_URL=http://conflux:8545
+      - MARKETPLACE_ADDRESS_FILE=/hardhat/marketplace_address.txt
+      - ARTIFACT_PATH=/hardhat/artifacts/contracts/Marketplace.sol/Marketplace.json
+      - OUT_PATH=/app/marketplace_events.jsonl
+    command: sh -c "pip install web3 && python -u scripts/indexer_marketplace.py"
+    depends_on:
+      - conflux
+      - hardhat
+
+  indexer-registered:
+    image: python:3.11
+    container_name: indexer-registered
+    working_dir: /app
+    volumes:
+      - ./scripts:/app/scripts
+      - ./hardhat:/hardhat
+    environment:
+      - ESPACE_RPC_URL=http://conflux:8545
+      - OUT_PATH=/app/scripts/registered_events.jsonl
+    command: sh -c 'pip install web3 && REGISTRY_ADDRESS=$(cat /hardhat/contract_address.txt) python -u scripts/indexer_registered.py'
+    depends_on:
+      - conflux
+      - hardhat

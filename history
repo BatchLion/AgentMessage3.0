@@ -1,0 +1,165 @@
+ 1006  docker-compose down
+ 1007  docker-compose up -d
+ 1008  docker-compose logs hardhat
+ 1009  docker-compose logs conflux
+ 1010  docker exec hardhat curl -v http://conflux:12537
+ 1011  docker-compose ps
+ 1012  sleep 30 && docker-compose logs hardhat
+ 1013  docker exec hardhat curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"cfx_clientVersion","params":[],"id":1}' http://conflux:12537
+ 1014  docker-compose ps
+ 1015  docker-compose logs hardhat
+ 1016  docker-compose down && docker-compose up -d
+ 1017  sleep 60 && docker-compose logs hardhat
+ 1018  docker-compose down && docker-compose up -d
+ 1019  sleep 30 && docker exec hardhat curl -v http://conflux:8545
+ 1020  docker-compose ps
+ 1021  docker-compose logs
+ 1022  docker-compose logs conflux
+ 1023  docker ps
+ 1024  docker-compose logs hardhat
+ 1025  make run
+ 1026  docker-compose logs hardhat
+ 1027  docker-compose logs hardhat
+ 1028  docker-compose logs hardhat
+ 1029  docker-compose logs hardhat
+ 1030  docker-compose logs hardhat
+ 1031  docker-compose logs hardhat
+ 1032  docker-compose logs hardhat
+ 1033  docker-compose logs hardhat
+ 1034  make down
+ 1035  make run
+ 1036  docker-compose logs hardhat
+ 1037  docker-compose logs hardhat
+ 1038  make run
+ 1039  docker-compose logs hardhat
+ 1040  docker-compose logs hardhat
+ 1041  docker compose logs conflux --tail=200
+ 1042  docker compose exec hardhat node -e "fetch(' http://conflux:8545 ', {method: 'POST', headers: {'content-type':'application/json'}, body: JSON.stringify({jsonrpc:'2.0',method:'eth_chainId',params:[],id:1})}).then(r=>r.text()).then(t=>console.log(t)).catch(e=>console.error(e))"
+ 1043  docker-compose logs hardhat
+ 1044  docker compose logs conflux --tail=200
+ 1045  docker compose exec hardhat node -e "fetch(' http://conflux:8545 ', {method: 'POST', headers: {'content-type':'application/json'}, body: JSON.stringify({jsonrpc:'2.0',method:'eth_chainId',params:[],id:1})}).then(r=>r.text()).then(t=>console.log(t)).catch(e=>console.error(e))"
+ 1046  docker compose exec hardhat npm ls @nomicfoundation/hardhat-ethers @nomiclabs/hardhat-ethers ethers hardhat
+ 1047  docker compose exec hardhat node -e "fetch(' http://conflux:8545 ', {method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify({jsonrpc:'2.0',method:'eth_accounts',params:[],id:1})}).then(r=>r.json()).then(j=>console.log(JSON.stringify(j))).catch(console.error)"
+ 1048  docker run --rm --network container:conflux-node curlimages/curl:8.8.0 -s -H 'content-type: application/json' \n  -d '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":1}' http://127.0.0.1:8545\n
+ 1049  docker run --rm --network container:conflux-node curlimages/curl:8.8.0 -s -H 'content-type: application/json' \n  -d '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}' http://127.0.0.1:8545
+ 1050  docker run --rm --network container:conflux-node curlimages/curl:8.8.0 -s -H 'content-type: application/json' --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":1}' http://127.0.0.1:8545
+ 1051  docker run --rm --network container:conflux-node curlimages/curl:8.8.0 -s -H 'content-type: application/json' --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}' http://127.0.0.1:8545
+ 1052  docker exec conflux-node sh -lc 'ls -la /data && find /data -maxdepth 3 -type d -iname "key" -o -iname "keystore"'
+ 1053  docker exec conflux-node sh -lc 'ls -la '
+ 1054  DEPLOYER_PRIVATE_KEY= docker compose run --rm hardhat sh -lc 'npm ci && npx hardhat compile && npx hardhat run scripts/deploy.js --network local'
+ 1055  docker exec conflux-node sh -lc 'cat /genesis_secret.txt'
+ 1056  docker exec conflux-node sh -lc 'ls -la / | sed -n "1,200p"'
+ 1057  docker exec conflux-node sh -lc 'ls -la /blockchain_data || true; ls -la /data || true; ls -la /config || true'
+ 1058  docker exec conflux-node sh -lc 'grep -inE "secret|key|keystore" /conflux.toml || sed -n "1,200p" /conflux.toml'\n
+ 1059  docker exec conflux-node sh -lc 'sed -n "1,200p" /gene_account.sh || true'
+ 1060  docker exec conflux-node sh -lc 'sed -n "1,200p" /start.sh || true'
+ 1061  docker exec conflux-node sh -lc 'find / -maxdepth 3 -type f ( -iname "genesis" -o -iname "secret" -o -iname "keystore" -o -iname "key" ) 2>/dev/null | sort | head -n 50'
+ 1062  docker exec conflux-node sh -lc 'find / -maxdepth 3 -type f -iname "genesis" -o -iname "secret" -o -iname "keystore" -o -iname "key" 2>/dev/null | sort | head -n 50'
+ 1063  docker run --rm node:20 node -e "console.log('0x'+require('crypto').randomBytes(32).toString('hex'))"
+ 1064  DEPLOYER_PRIVATE_KEY=0x344cd3f85d6df258b3c87c968056a0ca46c5529424a5e6f6a571ad7409596b00 docker compose run --rm hardhat sh -lc 'npm ci && npx hardhat compile && npx hardhat run scripts/deploy.js --network local'
+ 1065  DEPLOYER_PRIVATE_KEY=0x344cd3f85d6df258b3c87c968056a0ca46c5529424a5e6f6a571ad7409596b00 docker compose run --rm hardhat sh -lc 'npm ci && npx hardhat compile && npx hardhat run scripts/deploy.js --network local'
+ 1066  curl -s -X POST http://localhost:12537 -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"cfx_accounts","params":[],"id":1}'\n
+ 1067  curl -s -X POST http://localhost:12537 -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"cfx_getBalance","params":["REPLACE_WITH_ONE_ADDRESS_FROM_PREV", "latest_state"],"id":2}'
+ 1068  node -e "(async()=>{const {Conflux,Drip,CONST}=require('js-conflux-sdk');const c=new Conflux({url:'http://localhost:12537',networkId:1030});const acc=c.wallet.addRandom();const cross=c.InternalContract('CrossSpaceCall');const eSpaceAddr='REPLACE_WITH_YOUR_0X_DEPLOYER';const receipt=await cross.transferEVM(eSpaceAddr).sendTransaction({from:acc,address:acc.address,value:Drip.fromCFX(10)}).executed();console.log('Outcome',receipt.outcomeStatus);})();"
+ 1069  docker compose down -v
+ 1070  docker compose up -d --build
+ 1071  curl -s -X POST http://localhost:12537 -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"cfx_accounts","params":[],"id":1}'
+ 1072  curl -s -X POST http://localhost:12537 -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"cfx_getBalance","params":["REPLACE_WITH_FIRST_BASE32", "latest_state"],"id":2}'
+ 1073  cd hardhat && npm i js-conflux-sdk --save
+ 1074  node -e "(async()=>{const {Conflux,Drip}=require('js-conflux-sdk');const c=new Conflux({url:'http://localhost:12537',networkId:1030});const accounts=await c.cfx.getAccounts();const from=accounts[0];const cross=c.InternalContract('CrossSpaceCall');const to='REPLACE_WITH_YOUR_0X_DEPLOYER';const r=await cross.transferEVM(to).sendTransaction({from,value:Drip.fromCFX(10)}).executed();console.log('Outcome',r.outcomeStatus);})();"\n
+ 1075  cd ..
+ 1076  curl -s -X POST http://localhost:8545 -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"eth_getBalance","params":["REPLACE_WITH_YOUR_0X_DEPLOYER","latest"],"id":3}'\n
+ 1077  docker compose down -v
+ 1078  docker compose up -d --build
+ 1079  docker ps
+ 1080  docker logs -n 200 conflux-node
+ 1081  curl -s -X POST http://localhost:12537 -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"cfx_clientVersion","params":[],"id":0}'
+ 1082  curl -s -X POST http://localhost:12537 -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"cfx_accounts","params":[],"id":1}'
+ 1083  curl -s -X POST http://localhost:8545  -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":2}'
+ 1084  docker exec conflux-node sh -lc 'LOC=$(find / -maxdepth 3 -name "conflux.toml" 2>/dev/null | head -n1); echo CFG:$LOC; sed -n "1,200p" "$LOC" | sed -n "1,200p"'
+ 1085  docker exec conflux-node sh -lc 'LOC=$(find / -maxdepth 3 -name "conflux.toml" 2>/dev/null | head -n1); echo MINER_KEY_LINES:; grep -nEi "miner.*private|private_key" "$LOC" || true'
+ 1086  curl -s -X POST http://localhost:12537 -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"cfx_getStatus","params":[],"id":11}'
+ 1087  cd hardhat && npm i -s js-conflux-sdk@^2
+ 1088  node -e 'const {Wallet}=require("ethers");const w=Wallet.createRandom();console.log("PK="+w.privateKey);console.log("ADDR="+w.address)'
+ 1089  export PK=0x55db7c1bfe4ff391a6fd8812b482e0b2ec3508211151ed7bb3b826d2a112527c
+ 1090  export ESPACE_ADDR=0xEA11c7c57bFF25C97617d3b534fF3e07aB1B521e
+ 1091  curl -s -X POST http://localhost:12537 -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"cfx_getStatus","params":[],"id":11}'
+ 1092  export CORE_PK=0x5648ce5ce957a29578baf9d7cb84e28b4ae235c6a146f9a30102cccbdfeabaa2
+ 1093  export CORE_NETWORK_ID=0x1076
+ 1094  cd ..
+ 1095  cd hardhat && npm i -s js-conflux-sdk@^2 && cd -
+ 1096  node -e "(async()=>{const {Conflux,Drip}=require('js-conflux-sdk');const c=new Conflux({url:'http://localhost:12537',networkId:Number(process.env.CORE_NETWORK_ID)});const acc=c.wallet.addPrivateKey(process.env.CORE_PK);const cross=c.InternalContract('CrossSpaceCall');const r=await cross.transferEVM(process.env.ESPACE_ADDR).sendTransaction({from:acc.address,value:Drip.fromCFX(10)}).executed();console.log('Outcome',r.outcomeStatus);})();"\n
+ 1097  cd hardhat && npm i -s js-conflux-sdk@^2 && cd -
+ 1098  cd hardhat && npm i -s js-conflux-sdk@^2
+ 1099  npm i -s js-conflux-sdk@^2
+ 1100  cd ..
+ 1101  node -e "(async()=>{const {Conflux,Drip}=require('js-conflux-sdk');const c=new Conflux({url:'http://localhost:12537',networkId:Number(process.env.CORE_NETWORK_ID)});const acc=c.wallet.addPrivateKey(process.env.CORE_PK);const cross=c.InternalContract('CrossSpaceCall');const r=await cross.transferEVM(process.env.ESPACE_ADDR).sendTransaction({from:acc.address,value:Drip.fromCFX(10)}).executed();console.log('Outcome',r.outcomeStatus);})();"
+ 1102  cd hardhat && npm i -s js-conflux-sdk@^2 && cd -
+ 1103  node -e "(async()=>{const {Conflux,Drip}=require('js-conflux-sdk');const c=new Conflux({url:'http://localhost:12537',networkId:Number(process.env.CORE_NETWORK_ID)});const acc=c.wallet.addPrivateKey(process.env.CORE_PK);const cross=c.InternalContract('CrossSpaceCall');const r=await cross.transferEVM(process.env.ESPACE_ADDR).sendTransaction({from:acc.address,value:Drip.fromCFX(10)}).executed();console.log('Outcome',r.outcomeStatus);})();"
+ 1104  cd hardhat && npm i -s js-conflux-sdk@^2 && cd -
+ 1105  cd hardhat
+ 1106  node -e "(async()=>{const {Conflux,Drip}=require('js-conflux-sdk');const c=new Conflux({url:'http://localhost:12537',networkId:Number(process.env.CORE_NETWORK_ID)});const acc=c.wallet.addPrivateKey(process.env.CORE_PK);const cross=c.InternalContract('CrossSpaceCall');const r=await cross.transferEVM(process.env.ESPACE_ADDR).sendTransaction({from:acc.address,value:Drip.fromCFX(10)}).executed();console.log('Outcome',r.outcomeStatus);})();"  
+ 1107  cd -
+ 1108  curl -s -X POST http://localhost:8545 -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"eth_getBalance","params":["'"$ESPACE_ADDR"'","latest"],"id":22}'
+ 1109  docker exec hardhat sh -lc 'cd /app && DEPLOYER_PRIVATE_KEY='"$PK"' npx hardhat run scripts/deploy.js --network local'
+ 1110  cd ..
+ 1111  cd AgentMessage3.0/
+ 1112  docker exec hardhat sh -lc 'cd /app && DEPLOYER_PRIVATE_KEY='"$PK"' npx hardhat run scripts/deploy.js --network local'
+ 1113  docker compose run --rm -e DEPLOYER_PRIVATE_KEY="$PK" hardhat sh -lc 'cd /app && npx hardhat run scripts/deploy.js --network local'
+ 1114  sed -n '1,40p' hardhat/contract_address.txt
+ 1115  docker restart mcp
+ 1116  sleep 2 && docker logs --tail=200 mcp
+ 1117  docker compose build mcp
+ 1118  docker compose up -d mcp
+ 1119  sleep 2 && docker logs --tail=120 mcp
+ 1120  echo "$PK"
+ 1121  export PRIVATE_KEY="$PK"
+ 1122  docker compose up -d mcp
+ 1123  sleep 2 && docker logs --tail=120 mcp
+ 1124  curl -s -X POST http://localhost:17777/register_recall_id -H 'Content-Type: application/json' -d '{"metadata": {"team": "demo"}}' | jq
+ 1125  curl -s http://localhost:17777/collect_identities | jq
+ 1126  echo "$PK" 
+ 1127  export PRIVATE_KEY="$PK"
+ 1128  docker compose up -d --force-recreate mcp
+ 1129  sleep 2 && docker logs --tail=200 mcp
+ 1130  docker ps --filter name=mcp
+ 1131  docker inspect -f '{{json .Config.Env}}' mcp
+ 1132  docker inspect -f '{{range .NetworkSettings.Ports}}{{println .}}{{end}}' mcp\\n
+ 1133  docker inspect -f '{{range .NetworkSettings.Ports}}{{println .}}{{end}}' mcp
+ 1134  export PRIVATE_KEY="$PK"
+ 1135  docker compose build mcp\n
+ 1136  docker compose up -d --force-recreate mcp
+ 1137  sleep 2 && docker ps --filter name=mcp
+ 1138  docker logs --tail=200 mcp
+ 1139  curl -s -X POST http://localhost:17777/register_recall_id -H 'Content-Type: application/json' -d '{"metadata": {"team": "demo"}}' | jq
+ 1140  curl -s http://localhost:17777/collect_identities | jq
+ 1141  docker compose build mcp
+ 1142  docker compose up -d --force-recreate mcp
+ 1143  docker ps --filter name=mcp
+ 1144  docker logs --tail=200 mcp
+ 1145  curl -s -X POST http://localhost:17777/register_recall_id -H 'Content-Type: application/json' -d '{"metadata": {"team": "demo"}}' | jq
+ 1146  curl -s http://localhost:17777/collect_identities | jq
+ 1147  curl -s http://localhost:17777/openapi.json | jq '.paths["/register_recall_id"]'
+ 1148  curl -i -X POST http://localhost:17777/register_recall_id -H 'Content-Type: application/json' \n-d '{"metadata": {"team": "demo"}}'
+ 1149  curl -i -X POST http://localhost:17777/register_recall_id -H 'Content-Type: application/json' \n-d '{"metadata": {"team": "demo"}}'
+ 1150  curl -s -o /tmp/resp.json -w "HTTP %{http_code}\n" -X POST http://localhost:17777/register_recall_id -H 'Content-Type: application/json' \n-d '{"metadata": {"team": "demo"}}'
+ 1151  echo "--- body (hex dump) ---" && hexdump -C /tmp/resp.json | head -n 40
+ 1152  docker logs -f --tail=0 mcp
+ 1153  docker exec mcp sh -lc 'echo CONTRACT_ADDRESS=$CONTRACT_ADDRESS; echo PRIVATE_KEY=${PRIVATE_KEY:0:12}***; ls -l /hardhat/contract_address.txt; head -n1 /hardhat/contract_address.txt'
+ 1154  docker compose build mcp
+ 1155  docker compose up -d --force-recreate mcp
+ 1156  sleep 2 && docker logs --tail=200 mcp
+ 1157  curl -s -X POST http://localhost:17777/register_recall_id -H 'Content-Type: application/json' -d '{"metadata": {"team": "demo"}}' | jq
+ 1158  curl -s http://localhost:17777/collect_identities | jq
+ 1159  docker compose build mcp
+ 1160  docker ps --format 'table {{.Names}}\t{{.Status}}' | sed -n '1p;/mcp/p'
+ 1161  docker compose up -d mcp
+ 1162  docker ps --format 'table {{.Names}}\t{{.Status}}' | sed -n '1p;/mcp/p'
+ 1163  docker logs --tail=200 mcp
+ 1164  docker compose exec mcp env | egrep 'RPC_URL|PRIVATE_KEY|CONTRACT_ADDRESS'
+ 1165  curl -sS -f -H 'Content-Type: application/json' -d '{"agent_address":"0xYourAgentHex40","metadata":{"env":"dev","note":"smoke"}}' http://localhost:17777/register_recall_id | jq .
+ 1166  curl -sS -f http://localhost:17777/collect_identities | jq .
+ 1167  curl -sS -f -H 'Content-Type: application/json' -d '{"agent_address":"0xYourAgentHex40","metadata":{"env":"dev","note":"smoke"}}' http://localhost:17777/register_recall_id
+ 1168  history
+ 1169  echo $HISTSIZE
+ 1170  echo $SHELL

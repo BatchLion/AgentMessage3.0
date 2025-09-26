@@ -1,0 +1,11 @@
+{
+  "name": "conflux-hardhat-setup",
+  "version": "1.0.0",
+  "description": "Hardhat setup for Conflux MCP demo",
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.19.0",
+    "js-conflux-sdk": "^2.5.0"
+  }
+}

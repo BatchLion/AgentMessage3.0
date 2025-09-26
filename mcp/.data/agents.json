@@ -1,0 +1,1198 @@
+{
+  "0xbcef634c2f479ec098feb22d02bc952577f751ab": {
+    "agent_id": "0xBCef634c2f479eC098Feb22D02BC952577f751ab",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x6550333cea774c4c24f6994213b47e56aff449ca75a1c1e3bbe4337928cf314556e9d78770362d7808934da6b32d5cb86a5d7a2124b153f1ba7c442136c15c84",
+    "keystore": {
+      "address": "BCef634c2f479eC098Feb22D02BC952577f751ab",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "4b76a9b14eb7089ea2d3f2986ace5e53"
+        },
+        "ciphertext": "70a639af32a139f2f6b8c8dea86608db6e885a2dbbc28f4520b08fe461402106",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "1de66e89a2cc2e590724842f2e3070b7"
+        },
+        "mac": "c5c6e06195ca9a49caa635e46b52cf3d82cd64bf9aac114fe7d256fb686740e4"
+      },
+      "id": "cc130cbf-267d-483a-b570-17d18eba8eaa",
+      "version": 3
+    },
+    "created_at": "2025-09-23T03:54:45.342293Z",
+    "waku_pubkey": "0x9534b09b16c4d00d76fddb5b1a0637231c2fe8f9d2826332558a7a4814750d08",
+    "waku_direct_topic": "/agents/1/direct/0xbcef634c2f479ec098feb22d02bc952577f751ab",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0xb26e155ab320e93e14c445b51276457d58a18c53": {
+    "agent_id": "0xB26E155ab320e93E14c445B51276457d58A18c53",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x7c93407f65036030f458c22d255da2c70b5473e37b55e78ea80b16c0e276b1cf34bc012ca2802ef3e9274816b480d196c38de848dd50e173f06f7f32f5acfc52",
+    "keystore": {
+      "address": "B26E155ab320e93E14c445B51276457d58A18c53",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "7589eddbb07aaa65963c67e17559ec9d"
+        },
+        "ciphertext": "680664ef6e087c30e9d9032ac7873670cbcf544e15769d9a3c3406ec48be232f",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "737c939cf593fedf56651c6f7f8a886a"
+        },
+        "mac": "de9e3dd0a62e3ef3b27eb07f40062adc8974172e93dd9ebbcef03e5d05acd64e"
+      },
+      "id": "c55d0fc7-1691-4359-8251-a140a437399f",
+      "version": 3
+    },
+    "created_at": "2025-09-23T04:17:45.656518Z",
+    "waku_pubkey": "0x035eed0ea4026a85263da18bb1bfe689e0eee9975d07e4917429d39c8cc9197d",
+    "waku_direct_topic": "/agents/1/direct/0xb26e155ab320e93e14c445b51276457d58a18c53",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x9d82c910db30adee293a9345564cb655054a3ec3": {
+    "agent_id": "0x9D82C910dB30Adee293a9345564cB655054a3EC3",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x4d4a167136ea4f2f7d2cab40d0eae5c0e2055fe594b32bf5d6c4067dbe62e432523d81900d8bf0f55e0885a63d8095c4fba291b47f40efea4b0d3d0ad64e48c6",
+    "keystore": {
+      "address": "9D82C910dB30Adee293a9345564cB655054a3EC3",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "1cac66eac954bd3d79c6218387759fcf"
+        },
+        "ciphertext": "1ae80dfd394407099f056a974c23f9537aa8fb4dc8958ceb0ebbda3932736802",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "8abc9427b302bada8ba544223315276e"
+        },
+        "mac": "b5384c6bb2165918aff4d9b86d6602f2d0cf35f3e6e8e6caa8c249089655d0b7"
+      },
+      "id": "93dcb7c5-a9e6-4b05-93c8-9e2e0bcaf34f",
+      "version": 3
+    },
+    "created_at": "2025-09-23T04:35:39.820125Z",
+    "waku_pubkey": "0xa4877102ddd6380de51bc54026af899b30116837d7ef4d9fda832c6300fe0637",
+    "waku_direct_topic": "/agents/1/direct/0x9d82c910db30adee293a9345564cb655054a3ec3",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0xbed468a117971af4bc2f03c8f1c68ebcd205ebd4": {
+    "agent_id": "0xbed468a117971af4BC2f03C8f1c68ebcD205Ebd4",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0xba941cc5e295f9bd39870b5b611dffb8c18b5327279c2169770a46b0e31de309b742cca5605eab2f53b0c8d757723a096349cb59acb220b0fe9b9bc410bed974",
+    "keystore": {
+      "address": "bed468a117971af4BC2f03C8f1c68ebcD205Ebd4",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "a0ab095ce6609372142efec7a3c530ff"
+        },
+        "ciphertext": "e651b5458933189938370b46f3cc023835411a028a79f2eb4e11ecad7388a327",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "f2db212342b1a09cc619f3f1b9e45cb1"
+        },
+        "mac": "872124582e1daa28be3041a2a8c029b832a82a4724ffcaae35ca91a7ee1a88e0"
+      },
+      "id": "5d7d4445-9a2f-47c6-bdcb-461f5d047c5f",
+      "version": 3
+    },
+    "created_at": "2025-09-23T04:37:03.315591Z",
+    "waku_pubkey": "0x3746aa8993b5354a85faf29c22c0c94130bd7c8d2ab32dee80f1b8317e35791d",
+    "waku_direct_topic": "/agents/1/direct/0xbed468a117971af4bc2f03c8f1c68ebcd205ebd4",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x3a9d720f0a1e2bfaa2bab1655c44053b9d1a566b": {
+    "agent_id": "0x3a9d720F0a1e2BFaa2baB1655c44053b9D1A566B",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x7e5003002051eee8d104bdc928626cc0aaf4eab623aa36cf5c9a57be996f96167bd6d033881dc09ea7e577fa943aba9dd157e2efec5e646410f29c85dc016a0e",
+    "keystore": {
+      "address": "3a9d720F0a1e2BFaa2baB1655c44053b9D1A566B",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "1a84f0c23f11cf4443a2b35a2af35570"
+        },
+        "ciphertext": "378fd3215edaf4abdbbff7f28aebcf3388cf2b0d5418c9f2840192a564369338",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "9b73b7bc4bee615ddcb414fda0c60f92"
+        },
+        "mac": "f677e4acd32606312da31345cf39cef005569035ba6faf2b7bbcbd4b75e32e47"
+      },
+      "id": "5a4facbf-51da-4f35-a755-01c234310b57",
+      "version": 3
+    },
+    "created_at": "2025-09-23T04:44:26.044748Z",
+    "waku_pubkey": "0xec6975108761a3b0379295b0c34320f953b4d9bc39f4509b3f22c69f51f60357",
+    "waku_direct_topic": "/agents/1/direct/0x3a9d720f0a1e2bfaa2bab1655c44053b9d1a566b",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x08677db26cd3ad3401af391df0cf647412941684": {
+    "agent_id": "0x08677db26cD3AD3401af391dF0cF647412941684",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0xcd9cd08b9bfeb65586e148dcfd4680b31ffdc9529e326cc7dcca3cf673c9963d34bd4fcacec5a0b67f8530375617a3c090de7ec61bfa390124f7096b08be285d",
+    "keystore": {
+      "address": "08677db26cD3AD3401af391dF0cF647412941684",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "e83085c6054275f1d86daec886031537"
+        },
+        "ciphertext": "f1151014b78f7a823920e4af5381ea54206f8063f127acd6d5e10d9ed60ca7ab",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "d26efeaa70b16dbf0c8b5d4be27d14f7"
+        },
+        "mac": "692e547afde70d7318cdecce50c5144bbecd5be5de180b5537d23ad3c8d7db9a"
+      },
+      "id": "362506b0-5af5-48ce-977f-581597a47e7c",
+      "version": 3
+    },
+    "created_at": "2025-09-23T04:55:58.442154Z",
+    "waku_pubkey": "0x7123786dd7fe3acba87c9f80523645b5254df0f1c2643e38c846b3797bec6579",
+    "waku_direct_topic": "/agents/1/direct/0x08677db26cd3ad3401af391df0cf647412941684",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x145837a70a250e9aba097f4ee86aee7bec36df94": {
+    "agent_id": "0x145837A70A250E9Aba097f4ee86AEe7bEC36df94",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x37cf9622fec85e595ff7ed02eb59c6cd18b9bf9ee8e5f3f9d23ed8971ef76a6f7c14ef4e9a474ea0e06c2fa2d5bd89e685eae2f815bd4b75d75475c454239c98",
+    "keystore": {
+      "address": "145837A70A250E9Aba097f4ee86AEe7bEC36df94",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "fbebf2bdcfc3b74e88d900e2c46e33f2"
+        },
+        "ciphertext": "d6b1e39098f06bcfe55a59bcbeace49a1c5bde238fb1ee4038d46feeaa8d397a",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "f5e707825f553231964abab72cf225bc"
+        },
+        "mac": "372aca356bab49e03699a15f7f9a6b2f61fb9bebaab1077ebaa3951a5c67a7a9"
+      },
+      "id": "51ebcc4e-4ceb-43c9-9af7-f5b20180b6ed",
+      "version": 3
+    },
+    "created_at": "2025-09-23T04:56:00.474454Z",
+    "waku_pubkey": "0x504a01e4bf31f3f1c9b8c8b65b94ec4a3dcf353f2cd46a0dd0ae0ab27c709d60",
+    "waku_direct_topic": "/agents/1/direct/0x145837a70a250e9aba097f4ee86aee7bec36df94",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x4457891958da2e27059a749cbf642ac777707e4e": {
+    "agent_id": "0x4457891958DA2e27059A749CBF642Ac777707e4E",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x5b8e37010884d12cb4cd1a74ca0e44dabf63afe657c811c224ce65c53564393704a39453144605ac61ab3cd9c1eae0310244358e141e1a1e1231f25a3bc6882f",
+    "keystore": {
+      "address": "4457891958DA2e27059A749CBF642Ac777707e4E",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "494766231aee883cb31628ac7740fd86"
+        },
+        "ciphertext": "aea733c6ee9c0375ff9742474920d1ca4352c9fde0dbc2f3eefd38d4589187ac",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "61e3d7e11e50db0167a02fe942e7c7bd"
+        },
+        "mac": "20945eb11471703281b364527e5e36ac1ade9273a8ca3ec9eef04e495a8f80fd"
+      },
+      "id": "20a9f8f4-882d-45db-99ab-c655650c2dc8",
+      "version": 3
+    },
+    "created_at": "2025-09-23T05:07:59.206707Z",
+    "waku_pubkey": "0xb0a6eedc770804a6d9abff762e9f957988c0d4ff81a71b5ab1271f7bbf6ed157",
+    "waku_direct_topic": "/agents/1/direct/0x4457891958da2e27059a749cbf642ac777707e4e",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x412e33711438698ee7b3a1964b3f72e9414cc777": {
+    "agent_id": "0x412e33711438698ee7b3a1964B3F72E9414cc777",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0xf704e8dd868ab4cc82a6c3a0297a2018623337598fd8c5572638fa881a59141ca61449d01e21070dee45a773a635e4e6b667940b3f02c6ef4ec8518ae83e5c06",
+    "keystore": {
+      "address": "412e33711438698ee7b3a1964B3F72E9414cc777",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "cbe77494bb7687427fd6724007e6661b"
+        },
+        "ciphertext": "9ce4da595bc3718bce58b552489b4dd84beeb61f6097d263dc9d6c4528a791e5",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "555452e640ea0dc13596673c47d64927"
+        },
+        "mac": "a5f76c126d432f87b88fc8fb2308b1ff90df558df283e2c3eeb66c193e494659"
+      },
+      "id": "da4c09a9-17d9-42e4-9144-6b2d07c629fb",
+      "version": 3
+    },
+    "created_at": "2025-09-23T05:12:49.436863Z",
+    "waku_pubkey": "0x9cdb88ae324b309a8a3f3bcd8c5a704df61cdea56c4c144491c1f92760e0b50f",
+    "waku_direct_topic": "/agents/1/direct/0x412e33711438698ee7b3a1964b3f72e9414cc777",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0xe3e86b52b07a7a1e25205b400371710b7c48b12b": {
+    "agent_id": "0xE3E86B52b07A7a1e25205b400371710B7C48b12b",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0xf915a1e95c75ba858d2d15554be94de99148f5de829a95bf9fe55ce5f6d7a49ecdf171e7f8a2fbcdd9e3d4b0cec3a9d6f382205856fe7048e2eb52a8c79e1e2c",
+    "keystore": {
+      "address": "E3E86B52b07A7a1e25205b400371710B7C48b12b",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "7ec60797a0fd001e564da2c87a660586"
+        },
+        "ciphertext": "14a79f7081ae0f1c2ea87e30ca5d55afe8b64fa8c497dc18c451f30d399352c2",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "199402af82dcd81dd69480dec94cae12"
+        },
+        "mac": "558cad31fc22fa3f9b285ffb172be4b9a08a0c80919d85b619e31d9adda9f096"
+      },
+      "id": "76868187-b357-45b9-b79c-f49abfe9d84e",
+      "version": 3
+    },
+    "created_at": "2025-09-23T05:16:30.791366Z",
+    "waku_pubkey": "0x9365ac455db7ddcb5c68b4942cf5e148ce3c8b6b16e76133697e97c5f3472425",
+    "waku_direct_topic": "/agents/1/direct/0xe3e86b52b07a7a1e25205b400371710b7c48b12b",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x7e2f1647064912755f5cd46a01d4590d265ae623": {
+    "agent_id": "0x7e2F1647064912755F5cd46a01D4590D265aE623",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0xc9c8955087c25d645980cad8041d4232fc859df44c6a0932e178646b63370f5f87ecc0f6e881dc93c666e894cce3ef2ff40921ee86dc496a60310b06e345404a",
+    "keystore": {
+      "address": "7e2F1647064912755F5cd46a01D4590D265aE623",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "dc4b6268dfcd313c4d91740e3fc8137e"
+        },
+        "ciphertext": "7c85ed6d45770232a398d94ed1ed925e97195f3905489f03a78856e5543615a8",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "579ed8ea854333c3bb7fe97505a5cccc"
+        },
+        "mac": "6a7dcacf038490b17d5eb1e10bb2f106cb8dadf07d1315260c58f415357c9a26"
+      },
+      "id": "33c013bc-1ea8-44a1-8ea2-a53028d9b02c",
+      "version": 3
+    },
+    "created_at": "2025-09-23T05:17:22.888142Z",
+    "waku_pubkey": "0x666a3984f5ef38143c6d21beab71389b7d4c6de3599689f38aaf02edea0b3002",
+    "waku_direct_topic": "/agents/1/direct/0x7e2f1647064912755f5cd46a01d4590d265ae623",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x16ac894c4064aa6e47727685e3572cc8e5a56a62": {
+    "agent_id": "0x16aC894c4064AA6E47727685e3572cC8E5A56A62",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x5a14c21564bcb5a9dbb0be4498cb2016252b7f699d94b77b754d07341ee8ae75397db4c1ceae0c86f611b43b2bec8950b0c62b65fedb48f440f215abdad902bb",
+    "keystore": {
+      "address": "16aC894c4064AA6E47727685e3572cC8E5A56A62",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "f847394ebc6f7026d6829f0f1fe4516e"
+        },
+        "ciphertext": "d417cd5ccfeb68d2ea1c92b70b1687cae66592b9509ef929ebb49066933d2183",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "c18dfd64eb170cdd55ee56c04538e691"
+        },
+        "mac": "0784c550c69e9294f3c8f7ead820541674533b33f3edddea1e56bc5f0c2ba6fc"
+      },
+      "id": "dff158b3-29a1-4eae-9e79-d397b347f124",
+      "version": 3
+    },
+    "created_at": "2025-09-23T05:22:09.229526Z",
+    "waku_pubkey": "0xd7fbc71249ac107487bc97726f85ede925417dc2f1fa9fe42aa8db1785c2c963",
+    "waku_direct_topic": "/agents/1/direct/0x16ac894c4064aa6e47727685e3572cc8e5a56a62",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x894093e9ee9915f671022b0a7b3bc10d69e57c85": {
+    "agent_id": "0x894093E9Ee9915f671022b0A7b3Bc10D69E57c85",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x35199e504138ac54a24ef3a7254fa1c06ccff9ecedbc912d395e2e3fd2b4eda76940ea8991db045b92e2beb9bddc9063a35e48b646247f2f0c52f5b82f557078",
+    "keystore": {
+      "address": "894093E9Ee9915f671022b0A7b3Bc10D69E57c85",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "ddc763ce2c7a97faa7aebb099d3cc187"
+        },
+        "ciphertext": "896643ec8194d6f4ce66199ec1f5d6bf366440f137a892b0621713aa732f1dc0",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "78db1da64cc72b7cbd3004deea5d9dc0"
+        },
+        "mac": "48acdff1a1de7ba3ebacddde4f58601311681eba52c8cd8a4c618fcab0717ea0"
+      },
+      "id": "7401ce52-0617-4380-bb2b-2995ea145f0d",
+      "version": 3
+    },
+    "created_at": "2025-09-23T05:26:17.354060Z",
+    "waku_pubkey": "0x241e4b6e1638203f777e31b729fdd42a1ff0ca0f775d08ce566d1ea35c6f914f",
+    "waku_direct_topic": "/agents/1/direct/0x894093e9ee9915f671022b0a7b3bc10d69e57c85",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0xee4c474b8de6b9d8e54807ddf55af2b7047a07f1": {
+    "agent_id": "0xEE4c474B8de6b9D8e54807Ddf55aF2b7047a07F1",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x45e8d0a70baa19c27fd3b667ba8eea76390438ee610886994a6fc9ec482657b7b85179fbcd49bb5a01ab3f659abfed159e194b05f02deabcf62e8ec981a3d0ed",
+    "keystore": {
+      "address": "EE4c474B8de6b9D8e54807Ddf55aF2b7047a07F1",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "52f3cd46f609ebc20c3cdc246afbd578"
+        },
+        "ciphertext": "b204ea15544671d12bb6e11828572132399003d8e82557ac951f8a591fc33c5a",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "a80175ac3dd825b0523f80e03de60f30"
+        },
+        "mac": "f0ed683270bb6485897afa5238846a0b18e7f5c9cb8aa4f84597506d5fc575f4"
+      },
+      "id": "732800f2-4a3b-45a5-8b31-2742e3e462e9",
+      "version": 3
+    },
+    "created_at": "2025-09-23T05:29:05.784673Z",
+    "waku_pubkey": "0x19462c9e04854a5cb6e4a50af4e1f64601975f4d56a39030d3b2003e9c7e692d",
+    "waku_direct_topic": "/agents/1/direct/0xee4c474b8de6b9d8e54807ddf55af2b7047a07f1",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0xac926670de40e3f19d96f816edaa9860bc70a0af": {
+    "agent_id": "0xac926670dE40e3f19d96f816eDAA9860Bc70A0AF",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0xb74f3cef84ce24dbaf6240cab70bba7844a61c01d03c0921a376e7e0aa105d8220ff9a431af03027f6cb8c19b7f977bfde7c710a880a9d3d010217dc4ce6bd78",
+    "keystore": {
+      "address": "ac926670dE40e3f19d96f816eDAA9860Bc70A0AF",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "ed20468ad9e69e748aa6dce664ced1a9"
+        },
+        "ciphertext": "0f9fb970c2068e115018a00f9cd0ad12e361a2e975d231fe8727d3672a4ae1fa",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "bb8a7756c90113ab4a3701c6147495c4"
+        },
+        "mac": "d3ad3c793e95e3235c5275569b097a61269735c105495e037c0b7fdf534bd15a"
+      },
+      "id": "c484e45f-6a1f-4052-b968-5805b71b0173",
+      "version": 3
+    },
+    "created_at": "2025-09-23T09:56:48.490190Z",
+    "waku_pubkey": "0x1afb6f9f62a0781fb830dc82103f511e4c1b121285ccf9a6be05e7304962ee7e",
+    "waku_direct_topic": "/agents/1/direct/0xac926670de40e3f19d96f816edaa9860bc70a0af",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x0d6ad80411af1592525cfccd0bebae074cec36c8": {
+    "agent_id": "0x0D6aD80411aF1592525CfcCD0bebaE074ceC36c8",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x006fb09962317777b6671b65ffccae1407a58413105ba13837637af10253393fba04a9c77b5ea038528cd8879a0d33923b79d35b3dd4208e8c8a604f30880bc6",
+    "keystore": {
+      "address": "0D6aD80411aF1592525CfcCD0bebaE074ceC36c8",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "1b3afe76e69a2e351a5e6b910069973f"
+        },
+        "ciphertext": "aed2ea82af4944fdc856ecef138682cf51b01ae2d0cc79d9295b11b6ba372b87",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "b8b6615b961710ddc9cc262e908f6902"
+        },
+        "mac": "e85e4dc2a7dc3195469a51f7e5b4da71bf989546d650eb1f44ae8c5bd838c4d0"
+      },
+      "id": "e798e6d4-e825-4560-a8ab-e56d681a3739",
+      "version": 3
+    },
+    "created_at": "2025-09-23T23:56:41.766052Z",
+    "waku_pubkey": "0x855ca036c22f1ebdb88281888bf0bd732f6898772201a70d5ff345cc70ffbb11",
+    "waku_direct_topic": "/agents/1/direct/0x0d6ad80411af1592525cfccd0bebae074cec36c8",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x6e26aec53497794d94b15097354dd88e8a0974d9": {
+    "agent_id": "0x6e26aeC53497794d94b15097354Dd88E8A0974d9",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x88edbd4b2d2fa1faf213f8be3c20da9d9ff772115d85f57d3e574e1c797a67b99a246765e0f80e823c19e6a05542ba707611b9ac88b6e3c4c9c12b11a81a6798",
+    "keystore": {
+      "address": "6e26aeC53497794d94b15097354Dd88E8A0974d9",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "cfa4fbdfc801fcfe2db14ebd596a50df"
+        },
+        "ciphertext": "281663ff5db132c5eff6a95d64a19f75dba342a90063ff8ac4312a04ba821917",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "a6c2c5fa78e5161cc8cdb539e2b55ee6"
+        },
+        "mac": "914f87faa6d762225767b5eea0f1723ea56e72bb279f4e86c6d6bb5c486d5ade"
+      },
+      "id": "09dd4fd1-f0df-4802-a12a-564b432d3d30",
+      "version": 3
+    },
+    "created_at": "2025-09-24T00:07:28.737046Z",
+    "waku_pubkey": "0x51c8b66ce0d50c405d115fbdeb1b9c2b7c0ee9f26319e6b902acb999ca3dd816",
+    "waku_direct_topic": "/agents/1/direct/0x6e26aec53497794d94b15097354dd88e8a0974d9",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0xc5b75b7f1b064f7ba01fe70513c4e15ff0e9a222": {
+    "agent_id": "0xC5b75b7F1B064F7bA01fe70513c4E15FF0E9a222",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x44079d57100187878838b1fc98335e17a5d3c64d10790647fd6d627d6acfdac8278e49c0d86deba72d423c8f5de345f84170daa1bd3ae64d02b5fd52b0237f03",
+    "keystore": {
+      "address": "C5b75b7F1B064F7bA01fe70513c4E15FF0E9a222",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "a335fcc77dbc8f7c204052e277914dc7"
+        },
+        "ciphertext": "765bdd2f8d54a39025006bdddf8ca761c52984188c01a3021598c9be97cf8323",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "9598354cc5da1ef2220b50902e4863f6"
+        },
+        "mac": "6786739f545be23a7f75158321e3b2cb07a668a0f4cd87def478b8d3a7bf0616"
+      },
+      "id": "c040b674-a19f-4693-8787-1acb9d4ef965",
+      "version": 3
+    },
+    "created_at": "2025-09-24T00:08:48.241126Z",
+    "waku_pubkey": "0x61ca74ddaf70a3e0f6c645bd856032411bd9691ccccb25adb253087353d28861",
+    "waku_direct_topic": "/agents/1/direct/0xc5b75b7f1b064f7ba01fe70513c4e15ff0e9a222",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x89527ba0e26e95573dcd287dca972cc3c00b31f8": {
+    "agent_id": "0x89527BA0E26E95573dcD287dcA972cC3c00B31f8",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0xfb102ef668474c428924eac53db2b9c61506274041785e884bd66548c0b419b170d74208fdcf926c6e473608dbff08e0a4dd2dd5ae25702eb2f01b932a16f36f",
+    "keystore": {
+      "address": "89527BA0E26E95573dcD287dcA972cC3c00B31f8",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "7b9f910bac6cd03cdef7dee342a3a2a7"
+        },
+        "ciphertext": "c9b5f4f732b10e0ef9b9ba32408e67afa82a67d60289845c27a3efd4ebf0bdad",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "102169142fbef9f5870f66cedced0916"
+        },
+        "mac": "3b4a02137544f52296593eaadf201b32c7ef7af6cf5aa7da04dea7efaf073f66"
+      },
+      "id": "57f410f7-05c7-496a-8f16-929176e271e1",
+      "version": 3
+    },
+    "created_at": "2025-09-24T00:30:15.157869Z",
+    "waku_pubkey": "0x5da903af68cab0818b16b2334541b731dd67b7b541504f5d3d2e84c059ac7c4b",
+    "waku_direct_topic": "/agents/1/direct/0x89527ba0e26e95573dcd287dca972cc3c00b31f8",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x66331f7da3d8584e2dda7f7cce24bd7c10ba73db": {
+    "agent_id": "0x66331f7DA3d8584e2DdA7f7CCe24bD7c10bA73DB",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0xd977c8226b20dc481cecb2a2d812d979c0c9a76d4c93e4d05a2deefa836656caa7252b46fec68beebead153a8e36d5716d161549982dd81288d1cac85931a8e2",
+    "keystore": {
+      "address": "66331f7DA3d8584e2DdA7f7CCe24bD7c10bA73DB",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "1c7fdfd6c1c1c4c3826a7f7f9549c3ea"
+        },
+        "ciphertext": "c5c5de9f72af7348aa1894c2bbd7524d16a159cf2cb38b02a4d99d8ed87b0b29",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "f3650dccb59f12dbb641f2bf595f109a"
+        },
+        "mac": "cf1474c510a09ea9ed20fcf350b6f3e10d1aa4e3055c9f0b99bb92faafb5103c"
+      },
+      "id": "afc774a9-348b-4154-af43-0a945b83fb22",
+      "version": 3
+    },
+    "created_at": "2025-09-24T00:46:21.511338Z",
+    "waku_pubkey": "0x9ddb7cdaebfb75fc79fe8abedd658181c4319fe3fce47d44c3444dbaf6b74c3b",
+    "waku_direct_topic": "/agents/1/direct/0x66331f7da3d8584e2dda7f7cce24bd7c10ba73db",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x0b1ad7cce79360c5fb413a2b21ec90428b41eb57": {
+    "agent_id": "0x0b1Ad7ccE79360C5fB413A2b21eC90428B41Eb57",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0xe197245b1792955c0d1e9b8f75020f013c6082c4bedcdde94b5b5246b32a4340c4e4cd25259938d266c0ba7eecce51b4fe2dbdcc8c4f0eb39f7e93b5fc5bf836",
+    "keystore": {
+      "address": "0b1Ad7ccE79360C5fB413A2b21eC90428B41Eb57",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "2a7dcec0e039657df75be1478219ac1e"
+        },
+        "ciphertext": "e5270d1286a138dceb9d8a1b061fee4fec85384c7ea1c563497b774eb77afecf",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "0da8185d1adff17d586c40866281e40e"
+        },
+        "mac": "95d26c8d10773d197066b39e67f1bf065610937d8d0f5542ae4faa9f0a16ba92"
+      },
+      "id": "a090e3f4-c2de-4ebf-88a9-445663399897",
+      "version": 3
+    },
+    "created_at": "2025-09-24T00:52:59.336989Z",
+    "waku_pubkey": "0x4d55e1c7c8a43d0e0139520c35c0db778a5c728057feed015bae79c96510f30b",
+    "waku_direct_topic": "/agents/1/direct/0x0b1ad7cce79360c5fb413a2b21ec90428b41eb57",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x882b5c5395114d073be6b123c1b888243a4a6a17": {
+    "agent_id": "0x882b5C5395114D073BE6B123C1B888243A4a6A17",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0xb8af376cd3b09dc98ed6cc2babf2c7fe8d64439cde784bbe6e33c7befa7b66b376ea0e4d76692023bd6fc32f41b1948d6bb8f9c11c880fa28f04cbf76f679223",
+    "keystore": {
+      "address": "882b5C5395114D073BE6B123C1B888243A4a6A17",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "af6fa7a527cc101cbdd28ee539bbdf41"
+        },
+        "ciphertext": "319d0ce097f8fcc31a15d728b7a610d31c4a92374c6c50458d921558ebfdbca4",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "b748e0e50e46365bca1e6bb0dbb8bb49"
+        },
+        "mac": "1ccf4176a287473586692eb87877ddab7cd11a36909fdc2c2f7d7f9ebcaba8c9"
+      },
+      "id": "c5ae7c5f-e763-46da-a980-86928c97ea13",
+      "version": 3
+    },
+    "created_at": "2025-09-24T01:12:18.091618Z",
+    "waku_pubkey": "0x3c31aef68a4e4a40eebc4a75b256c1f510a83fdb59b376448a3abf1b6867cd55",
+    "waku_direct_topic": "/agents/1/direct/0x882b5c5395114d073be6b123c1b888243a4a6a17",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0xd991fec45696a9f1c1af83e1021ff26d809798a0": {
+    "agent_id": "0xD991fec45696A9f1c1af83e1021FF26D809798A0",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x5bac589ff741a6fbcd24fcff7e621520d1e4781ea9387a0c19356d22afc9dc5ffcb18b7befcb958302179ada22cf799ffa9b558594f6b9bccc232c5411adc545",
+    "keystore": {
+      "address": "D991fec45696A9f1c1af83e1021FF26D809798A0",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "e51bfde083374dd358d99442345a9a0c"
+        },
+        "ciphertext": "9aa69eb10f230643afbab555bc2a20eb915ea055cccf0d011aa17afbd0ed2979",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "630378704c9a287b2c837bc60f7151ef"
+        },
+        "mac": "7eaaf52cefdea324894fcd1ee80bd5309c859f05afafb92447499ee4853c93b7"
+      },
+      "id": "7496643e-dcab-4d23-b464-172e2b14db3d",
+      "version": 3
+    },
+    "created_at": "2025-09-24T01:15:23.872687Z",
+    "waku_pubkey": "0x6dcac60808951a116d79d26881b80774bb834ede77bccd15eb82c9c319d54f6f",
+    "waku_direct_topic": "/agents/1/direct/0xd991fec45696a9f1c1af83e1021ff26d809798a0",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0xc8fb9f46bb0eab0a764fe9ab9a5d08d6420d3623": {
+    "agent_id": "0xC8fB9F46bb0Eab0A764fE9ab9a5D08d6420D3623",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x96fe5f33918d9bb6cb9220af98331394245bb865ea68dc4081407ced03703b9ab7ff41cd72114aedea56e6282c89cc8bc6ade6d8bd820c22b4688c7ac4f5c439",
+    "keystore": {
+      "address": "C8fB9F46bb0Eab0A764fE9ab9a5D08d6420D3623",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "c00b58dbf9186f8ecd59f5323c18abc7"
+        },
+        "ciphertext": "32b75cbe1fece46807b9df709c9021cda974fa0aa70522ddba7c22cf6bf6e03b",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "1bcd31e0abae7e0207cf7344acda0a7d"
+        },
+        "mac": "67f6a2a958bd75740802cfa872a2bf4c0f175e0e61cf9673c1b9a77a75e31a8a"
+      },
+      "id": "5669064d-d64a-4775-9c0d-9acb1f1702f5",
+      "version": 3
+    },
+    "created_at": "2025-09-24T01:32:25.454429Z",
+    "waku_pubkey": "0xd2d6f298385e0f94f118f123b3c276c9046ae4381b28a8d996c02b239880f67c",
+    "waku_direct_topic": "/agents/1/direct/0xc8fb9f46bb0eab0a764fe9ab9a5d08d6420d3623",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x8a16b1de138dab3e72d26bd7229a722ed51a5db6": {
+    "agent_id": "0x8a16b1De138DaB3e72d26bD7229A722ED51a5db6",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x3b695eb3ca46741e277547351e42c81e8090b66f7aec975540d91f6fd68543ccd93a7215a106e57983e3f1099635347fbfd72d7f84b2d227bf1a88bd1438b830",
+    "keystore": {
+      "address": "8a16b1De138DaB3e72d26bD7229A722ED51a5db6",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "b2edd04a9b05caf3bfa8894af87d8281"
+        },
+        "ciphertext": "bbd6c237492a119c7d03461ea8ad7aabbf370c7745688eef7cb83b4a245aad45",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "792cf404528579e105ae01bf9b1f1c3d"
+        },
+        "mac": "b2acbf50068d417eb7ceac179bddff025e51e9b02ee0ea677b231f0a591c7ab6"
+      },
+      "id": "e6ab57f1-4649-4c2c-9a2c-6a1d007ea535",
+      "version": 3
+    },
+    "created_at": "2025-09-24T01:33:04.360480Z",
+    "waku_pubkey": "0xa41748e63a58cce07ca8bf06916532b2b77546e83340b2f9f32b38b63afb611a",
+    "waku_direct_topic": "/agents/1/direct/0x8a16b1de138dab3e72d26bd7229a722ed51a5db6",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x705be263db085b56edf8d1442d77e18c27ab1b82": {
+    "agent_id": "0x705be263Db085b56EDF8D1442D77e18C27AB1B82",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0xe334a1ca2b42f9d7d64fd709825efe83574932b94288a16b31711425155eb5af0ef40e5a83e8e408d31f4aba97fb0fc3231f9bc240507b586ee501a6443ad8de",
+    "keystore": {
+      "address": "705be263Db085b56EDF8D1442D77e18C27AB1B82",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "40cbd5fd2b13f1e2e90e3d0914eeb702"
+        },
+        "ciphertext": "38e1c73fc54120e6e8c4befd550315b0b4a8a4e33b84a3fbb5de3e571db4928a",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "856761eec1cbf1bf96327681905afb7d"
+        },
+        "mac": "0c77fda397a955899fd0e2e5ac0d51101a95df0840a108acd65bbe72dc800e8a"
+      },
+      "id": "a8eaf017-2b97-45dd-82a5-f8ce476a7fc1",
+      "version": 3
+    },
+    "created_at": "2025-09-24T01:40:35.146664Z",
+    "waku_pubkey": "0xfb3ea19c3cfba48da699b622f57f3575f76f1afe93a68a608a4f0d6eb758ed0b",
+    "waku_direct_topic": "/agents/1/direct/0x705be263db085b56edf8d1442d77e18c27ab1b82",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x73c63797ae0112f5e7fbf37e26ca0eda057b6755": {
+    "agent_id": "0x73c63797AE0112F5E7FbF37e26Ca0EDA057b6755",
+    "name": "Alice",
+    "description": "Agent A",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x0d46e3b84b0186d562498babf4fd5843ad6289ff2cf98f754b3fa353c5167654aaf43061b09306866b32186e02ed5dad1296f87c9a0f7ce72e5a0a090ca53b66",
+    "keystore": {
+      "address": "73c63797AE0112F5E7FbF37e26Ca0EDA057b6755",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "72c16651cf518d7aa5153cf183b0b742"
+        },
+        "ciphertext": "3fa95fbf832e4f08e0a5fc1f750dfdec7d1c68d5c972b41699741b3fef0bfd5e",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "baf0cfea780b920e3435d45c8457b750"
+        },
+        "mac": "16df7eb56dbd8e98e1391b8e06c374176109551e5e42d0d04f103794f89bd030"
+      },
+      "id": "2ab3a2d6-a5f7-430c-b06c-a2b7deec985f",
+      "version": 3
+    },
+    "created_at": "2025-09-24T03:10:52.677458Z",
+    "waku_pubkey": "0x981f3a771b5e40b6d29049f32b156b21193e400de5374e319e1c4f191f57270f",
+    "waku_direct_topic": "/agents/1/direct/0x73c63797ae0112f5e7fbf37e26ca0eda057b6755",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x31c00488faf2463bc61482ac55f58c43864b2c4b": {
+    "agent_id": "0x31c00488fAf2463bC61482AC55f58c43864b2c4B",
+    "name": "Bob",
+    "description": "Agent B",
+    "capabilities": [
+      "chat",
+      "waku-v2"
+    ],
+    "public_key": "0x86f62627752994a9500a49c4e076d63e5067bdecf6af9de7cc47bd6ce4330a4df458750ff038ddffb5f9e8d160ed2016da951fb68ca837f817e2b9234006ae6b",
+    "keystore": {
+      "address": "31c00488fAf2463bC61482AC55f58c43864b2c4B",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "78dc7ec7914caddca3f1897cd6baf80b"
+        },
+        "ciphertext": "47f5ad386d5d973fa40d4c251fd74aa9897aad5298963254a282f162c29560bc",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "90a0079ed0db742efe2bd8ed0b06689a"
+        },
+        "mac": "cdd332240b261bb045b340498958a144bbc8c6964b38bb6b4e0835a9771e8daa"
+      },
+      "id": "2c2c403b-1650-441b-815f-b4239badd48a",
+      "version": 3
+    },
+    "created_at": "2025-09-24T03:11:13.446166Z",
+    "waku_pubkey": "0x8b1517ca85b9bcd3a9d148166e82fdf6107a72c2c44224e3d9a5c017593ae201",
+    "waku_direct_topic": "/agents/1/direct/0x31c00488faf2463bc61482ac55f58c43864b2c4b",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x5ca86310e6317cd3b447a5122504580287ecd572": {
+    "agent_id": "0x5cA86310e6317Cd3b447A5122504580287ECD572",
+    "name": "Alice",
+    "description": "test",
+    "capabilities": [
+      "waku-v2"
+    ],
+    "public_key": "0x5aa600610f72714adc22fc2b847fbc952213bfebe30fa876fe9b2dfbde7683bc7dace9b565c4342b296d75d8b6ace03a8b5e489406dcc310dc4b3b1bcb68e440",
+    "keystore": {
+      "address": "5cA86310e6317Cd3b447A5122504580287ECD572",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "c52312490a889d5654ac93ed6218ec87"
+        },
+        "ciphertext": "bf9546ad79bfb413fcd42163ad9ca5cc8edc73327d0b37a249d46416e33c1bf9",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "8c7878227ea082b977c0e01b43d94fdd"
+        },
+        "mac": "1087e06c172b38653268f8f53bb966bca925d6f47a749cddb441bc7f7f086c6b"
+      },
+      "id": "3ad9e721-6fa2-44d7-a15b-855280153dd2",
+      "version": 3
+    },
+    "created_at": "2025-09-24T04:12:32.108749Z",
+    "waku_pubkey": "0xcc0203a77b2693f8b34bee84b98486050ae851c7d9096f559045e86445237d56",
+    "waku_direct_topic": "/agents/1/direct/0x5ca86310e6317cd3b447a5122504580287ecd572",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0xf5e86f32c91ec7e1e733bf4bae0768d88bac9a98": {
+    "agent_id": "0xF5E86f32C91Ec7E1E733Bf4bae0768d88Bac9a98",
+    "name": "Bob",
+    "description": "test",
+    "capabilities": [
+      "waku-v2"
+    ],
+    "public_key": "0x3a329566649d8a32af648f937776c5cbdb8539b3cf6680d1a9095006c7b7a776c3f66928bb323304713ea5c3a8979ca7be619ced2ae268360ed5fb65913761c0",
+    "keystore": {
+      "address": "F5E86f32C91Ec7E1E733Bf4bae0768d88Bac9a98",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "f1ae1a77b3ab91ac3a1bbe13021ee42d"
+        },
+        "ciphertext": "0bcc2624ab84b2b33f1766af41329dd4629826b86b7c8e691fed7f4e1ddc0e83",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "4c0d3e97ae9b84de0dfcf51ebbfa767b"
+        },
+        "mac": "7c8c991d1949645e15a33111cfb55278b1120e251e3b7b14a25029cf78825a57"
+      },
+      "id": "cbf2cfb7-c241-466f-b532-d03692723966",
+      "version": 3
+    },
+    "created_at": "2025-09-24T04:12:44.862092Z",
+    "waku_pubkey": "0x10acd262731d11b6710744911754c36373e62753e2255094cae72c165c048373",
+    "waku_direct_topic": "/agents/1/direct/0xf5e86f32c91ec7e1e733bf4bae0768d88bac9a98",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x8ede96fcfa516c46fbff0b4d017663f72781aa1f": {
+    "agent_id": "0x8eDE96fcFa516C46fBFF0b4d017663f72781aa1f",
+    "name": "Test Agent MCP 001",
+    "description": "A test agent for MCP functionality testing",
+    "capabilities": [
+      "chat",
+      "message_relay",
+      "group_communication",
+      "waku-v2"
+    ],
+    "public_key": "0x54cdbded2797d53e24f3033b364c95320538d909f96c3933e81ea321ec253657159e7c9fe27ede80b29b99aca2abf69d014e4d0c0f787c87663c77ae5520042d",
+    "keystore": {
+      "address": "8eDE96fcFa516C46fBFF0b4d017663f72781aa1f",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "adf6aca9758f4ddc6a74dd88e916efc5"
+        },
+        "ciphertext": "e6c14e21637e9045c2900479b34b77c06038db55ae15ef49ab0640e9b334ffdd",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "16ef893912be8337c6e68b693c5e24a9"
+        },
+        "mac": "8e2c8b93736207a2d88759c86a3b24938c899425fa7cc306cc156ba76c8d243d"
+      },
+      "id": "071e2820-a499-4a20-b520-56fdddd80c4c",
+      "version": 3
+    },
+    "created_at": "2025-09-26T03:50:30.710190Z",
+    "waku_pubkey": "0x69b8fbea445ccdcbca32942cb5df6b3865e6c561f51a39f95465184fbe6f363b",
+    "waku_direct_topic": "/agents/1/direct/0x8ede96fcfa516c46fbff0b4d017663f72781aa1f",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x121ce83856d2a516c774b4b12e6efd2cbeea8ed7": {
+    "agent_id": "0x121ce83856d2A516c774b4B12E6efD2cBEea8eD7",
+    "name": "Test Agent MCP 001",
+    "description": "A test agent for MCP functionality testing",
+    "capabilities": [
+      "chat",
+      "message_relay",
+      "group_communication",
+      "waku-v2"
+    ],
+    "public_key": "0xf09cb1fff49d3de6897786b9d26e8b940f0fd5e68ac5bfb75fd78a33a6cc0dafa19f033a913070c6b3b28495c5390a2c9ab3c803403acb5d63f781f2544c9728",
+    "keystore": {
+      "address": "121ce83856d2A516c774b4B12E6efD2cBEea8eD7",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "7340ad8b447e25847555a8dc5accb418"
+        },
+        "ciphertext": "d9aecccec108671d3d275dc33e942e76a8d6b322c76fd329d5c197b074e75f16",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "ab22b2e1567bc3cbc0b61457e85c05c6"
+        },
+        "mac": "e345353056a2867b356fbee4b70765af26df127e068370913b0a54de9fe6e4ef"
+      },
+      "id": "6516cdb0-9aa5-427a-8962-b3ef1e751391",
+      "version": 3
+    },
+    "created_at": "2025-09-26T03:59:11.288562Z",
+    "waku_pubkey": "0x37263099aefbc54fefa320348155c650bea30e94a6a15e6fb26643c11dc8407b",
+    "waku_direct_topic": "/agents/1/direct/0x121ce83856d2a516c774b4b12e6efd2cbeea8ed7",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x665bf79caa94a5cb20c1390f7dea3fc31f2ef77c": {
+    "agent_id": "0x665bF79Caa94A5cb20C1390F7deA3FC31f2Ef77C",
+    "name": "Test Agent MCP 001",
+    "description": "A test agent for MCP functionality testing",
+    "capabilities": [
+      "chat",
+      "message_relay",
+      "group_communication",
+      "waku-v2"
+    ],
+    "public_key": "0xf069aa018ad8cbd255624187310e085c1dae7766b7f3055b8ff3b3e9ab2ef84aac05d8c3c21809fdbdf5419cef0a6f5f2f0ede49db2433a5710b53ef68aaac9a",
+    "keystore": {
+      "address": "665bF79Caa94A5cb20C1390F7deA3FC31f2Ef77C",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "ccb7a8862029df5a41c64d45016f432d"
+        },
+        "ciphertext": "749013a5a9d8f78aac56c3bebd8a1ba35f62e90d8db838cecc5354b1006f101c",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "805758d569db89986a106b5d00fd2f1b"
+        },
+        "mac": "711e7cbc707852f7c9b3ca1b95dfb5a796fdfc9049c809de43337eee6bb89b7a"
+      },
+      "id": "03168908-5725-4dcf-a236-2a1ea96b7e04",
+      "version": 3
+    },
+    "created_at": "2025-09-26T04:01:26.587312Z",
+    "waku_pubkey": "0xe355707b793be847107c80337205cecb96967341a74c010b3df5e195b0ecd35d",
+    "waku_direct_topic": "/agents/1/direct/0x665bf79caa94a5cb20c1390f7dea3fc31f2ef77c",
+    "waku_pubsub_topic": "/app/agents/1"
+  },
+  "0x4662e4b9a6c7288769a36f50cef729aa813161f6": {
+    "agent_id": "0x4662e4b9a6c7288769a36f50CeF729aa813161F6",
+    "name": "Test Agent MCP 002",
+    "description": "Second test agent for cross-server communication testing",
+    "capabilities": [
+      "chat",
+      "message_relay",
+      "group_communication",
+      "waku-v2"
+    ],
+    "public_key": "0xed633f70e612eae3dfd9c1d7487dc49070a7189a480bfbe82fa21ccc42af1ef18e8c7a9c62c089b4f10169bf46a2b97e8250abe826ba76869b6fb756e92adb5f",
+    "keystore": {
+      "address": "4662e4b9a6c7288769a36f50CeF729aa813161F6",
+      "crypto": {
+        "cipher": "aes-128-ctr",
+        "cipherparams": {
+          "iv": "1992d3e9b11edfe61a7538e14eaed204"
+        },
+        "ciphertext": "079c340d29f88d3e3133d9172663b3bed5da1e2739664b4d045845e77ef1638e",
+        "kdf": "scrypt",
+        "kdfparams": {
+          "dklen": 32,
+          "n": 262144,
+          "r": 8,
+          "p": 1,
+          "salt": "8b64260f39f97d210f43f8ef74c613cf"
+        },
+        "mac": "338a91b0274038d1d690bd57ed0e56de27a4aea83c6006ce3378b88be02ecaac"
+      },
+      "id": "158768ac-d315-4403-9cb9-38f7ff2062d2",
+      "version": 3
+    },
+    "created_at": "2025-09-26T04:07:02.913257Z",
+    "waku_pubkey": "0x3f9c40331f3da0365faeebf510ed3cfe29c2b9db28af3052271f8c7b2248b652",
+    "waku_direct_topic": "/agents/1/direct/0x4662e4b9a6c7288769a36f50cef729aa813161f6",
+    "waku_pubsub_topic": "/app/agents/1"
+  }
+}
