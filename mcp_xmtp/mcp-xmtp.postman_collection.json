@@ -1,0 +1,120 @@
+{
+  "info": {
+    "name": "MCP XMTP Server",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Postman collection for MCP XMTP Server endpoints"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:58548" },
+    { "key": "agentA", "value": "b1a96dd646bccaa2" },
+    { "key": "agentB", "value": "703390318bd55aef" },
+    { "key": "password", "value": "default_password" },
+    { "key": "recipient", "value": "0x3CE1CC60282eFE243BcC9aebc8B67bca951E83D4" },
+    { "key": "replyToMessageId", "value": "<replace-with-message-id>" },
+    { "key": "conversationId", "value": "<optional-conversation-id>" }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "request": { "method": "GET", "url": "{{baseUrl}}/health" }
+    },
+    {
+      "name": "Go Online (Agent A)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"agent_id\": \"{{agentA}}\",\n  \"password\": \"{{password}}\"\n}" },
+        "url": "{{baseUrl}}/go_online"
+      }
+    },
+    {
+      "name": "Go Online (Agent B)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"agent_id\": \"{{agentB}}\",\n  \"password\": \"{{password}}\"\n}" },
+        "url": "{{baseUrl}}/go_online"
+      }
+    },
+    {
+      "name": "Send Text",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"agent_id\": \"{{agentA}}\",\n  \"recipient_address\": \"0x71F3ce1d0603a8AE7114DEe0B53C3BD1101346dA\",\n  \"message\": \"Hi\"\n}" },
+        "url": "{{baseUrl}}/xmtp/send"
+      }
+    },
+    {
+      "name": "Send Reply (via /xmtp/send)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"agent_id\": \"{{agentB}}\",\n  \"recipient_address\": \"{{recipient}}\",\n  \"message\": \"Re: Hi\",\n  \"content_type\": \"reply\",\n  \"reply_to\": \"{{replyToMessageId}}\"\n}" },
+        "url": "{{baseUrl}}/xmtp/send"
+      }
+    },
+    {
+      "name": "Send Reply (convenience)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"agent_id\": \"{{agentB}}\",\n  \"recipient_address\": \"{{recipient}}\",\n  \"message\": \"Re: Hi\",\n  \"reply_to\": \"{{replyToMessageId}}\"\n}" },
+        "url": "{{baseUrl}}/xmtp/send_reply"
+      }
+    },
+    {
+      "name": "Send Attachment (inline)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"agent_id\": \"{{agentA}}\",\n  \"recipient_address\": \"{{recipient}}\",\n  \"filename\": \"note.txt\",\n  \"mimeType\": \"text/plain\",\n  \"data\": [97, 98, 99]\n}" },
+        "url": "{{baseUrl}}/xmtp/send_attachment"
+      }
+    },
+    {
+      "name": "Get Messages",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/xmtp/messages?agent_id={{agentA}}&limit=20",
+          "host": ["{{baseUrl}}"],
+          "path": ["xmtp", "messages"],
+          "query": [
+            { "key": "agent_id", "value": "{{agentA}}" },
+            { "key": "conversation_id", "value": "{{conversationId}}" },
+            { "key": "limit", "value": "20" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Conversations",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/xmtp/conversations?agent_id={{agentA}}&limit=20",
+          "host": ["{{baseUrl}}"],
+          "path": ["xmtp", "conversations"],
+          "query": [
+            { "key": "agent_id", "value": "{{agentA}}" },
+            { "key": "limit", "value": "20" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Group",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"agent_id\": \"{{agentA}}\",\n  \"participant_addresses\": [\"0xabc...\", \"0xdef...\"],\n  \"group_name\": \"My Group\"\n}" },
+        "url": "{{baseUrl}}/xmtp/groups/create"
+      }
+    },
+    {
+      "name": "Agent Status",
+      "request": { "method": "GET", "url": "{{baseUrl}}/agent/status/{{agentA}}" }
+    }
+  ]
+}

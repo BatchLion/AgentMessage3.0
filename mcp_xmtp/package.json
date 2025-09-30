@@ -1,0 +1,40 @@
+{
+  "name": "conflux-mcp-xmtp",
+  "version": "0.1.0",
+  "description": "Conflux MCP Demo with Express.js and XMTP integration",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts",
+    "watch": "nodemon --exec ts-node src/server.ts",
+    "cli": "ts-node src/cli.ts",
+    "mcp": "node src/mcp-adapter-fixed.mjs"
+  },
+  "dependencies": {
+    "@xmtp/node-sdk": "4.1.2",
+    "@xmtp/content-type-remote-attachment": "*",
+    "@xmtp/content-type-reply": "*",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "ethers": "^6.8.1",
+    "express": "^4.18.2",
+    "fs-extra": "11.1.1",
+    "js-conflux-sdk": "^2.5.0",
+    "web3": "^4.2.2",
+    "@modelcontextprotocol/sdk": "^1.2.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.15",
+    "@types/express": "^4.17.20",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.8.7",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
